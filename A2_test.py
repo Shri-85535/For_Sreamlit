@@ -86,6 +86,12 @@ if page == "Live Dashboard":
     mid_row = st.columns(3)
     with mid_row[0]:
         st.markdown("<div class='card'><h2>🎥 Camera Uptime</h2><strong>Live: 96.7%</strong><br><small>Offline: 3 zones</small></div>", unsafe_allow_html=True)
+
+    # Fill the space below Camera Uptime
+    with mid_row[0]:
+        st.markdown("<div class='card'><h2>☁️ Weather Update</h2><strong>29°C, Cloudy</strong><br><small>Humidity: 68%</small></div>", unsafe_allow_html=True)
+        st.markdown("<div class='card'><h2>🧪 Air Quality Index</h2><strong>54 (Moderate)</strong><br><small>PM2.5: 35 µg/m³</small></div>", unsafe_allow_html=True)
+
     with mid_row[1]:
         st.markdown(f"<div class='card'><h2>📞 Emergency Calls</h2><strong>{random.randint(6, 10)}</strong><br><small>Avg. Duration: 11m</small></div>", unsafe_allow_html=True)
         # Line chart moved below this row
